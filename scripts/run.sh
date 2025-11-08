@@ -5,10 +5,10 @@ set -e  # 脚本出错时自动停止，避免继续执行无效步骤
 source ~/miniconda3/bin/activate transf  # WSL中conda激活的标准路径
 
 # 2. 安装依赖包（若他人下载你的代码，这步会自动补全依赖）
-pip install -r ../requirements.txt  # ../指向transf根目录的requirements.txt
+pip install -r /mnt/d/大模型/transf/requirements.txt
 
 # 3. 运行训练代码（路径对应src/trans_f.py，WSL下相对路径生效）
-python ../src/trans_f.py
+python src/trans_f.py
 
 # 4. 训练完成提示
 echo " Transformer训练已完成！"

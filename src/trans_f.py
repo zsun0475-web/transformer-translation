@@ -24,12 +24,16 @@ if gpus:
         print(e)
 
 # 加载CSV数据集
-data_dir = Path(r'D:\大模型\transf\data')
+#data_dir = Path(r'D:\大模型\transf\data')
+data_dir = Path('./data')
 
 # 读取CSV（根据实际列名修改usecols）
 train_df = pd.read_csv(data_dir / "train.csv", usecols=["en", "zh"])  # 源语言列、目标语言列
 val_df = pd.read_csv(data_dir / "validation.csv", usecols=["en", "zh"])
 
+print("训练数据行数:", len(train_df))  # 预期>0，比如几百/几千行
+print("验证数据行数:", len(val_df))    # 预期>0
+print("训练数据前2行:\n", train_df.head(2))
 # 转换为tf.data.Dataset
 def df_to_dataset(df):
     # 分别提取en和zh列的numpy数组（字符串类型）
@@ -329,7 +333,11 @@ def create_masks(inp, tar):
     
     return enc_padding_mask, combined_mask, dec_padding_mask
 
-optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+EPOCHS = 10
+lr_scheduler = tf.keras.optimizers.schedules.CosineDecay(
+    initial_learning_rate=3e-4, decay_steps=len(train_dataset)*EPOCHS, alpha=0.01
+)
+optimizer = tf.keras.optimizers.Adam(learning_rate=lr_scheduler)
 
 # 定义train_step
 @tf.function(experimental_relax_shapes=True)  # 允许输入形状动态变化
@@ -358,10 +366,6 @@ val_losses = []
 perplexities = []   
 
 # 训练模型
-EPOCHS = 10
-lr_scheduler = tf.keras.optimizers.schedules.CosineDecay(
-    initial_learning_rate=3e-4, decay_steps=len(train_dataset)*EPOCHS, alpha=0.01
-)
 for epoch in range(EPOCHS):
     total_loss = 0
 
@@ -373,13 +377,12 @@ for epoch in range(EPOCHS):
     train_losses.append(avg_train_loss.numpy())  # 转numpy，避免Tensor占用内存
 
     val_loss = 0
-    # 验证时不更新参数，关闭梯度计算（提升效率）
+    # 验证时不更新参数
     for (batch, (inp, tar)) in enumerate(val_dataset):
         tar_inp = tar[:, :-1]
         tar_real = tar[:, 1:]
         enc_pad_mask, look_ahead_mask, dec_pad_mask = create_masks(inp, tar_inp)
-    
-    # 不使用 GradientTape
+
         preds, _ = transformer(
             inp, tar_inp, 
             training=False,
