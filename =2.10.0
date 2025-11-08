@@ -1,0 +1,346 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting tensorflow
+  Downloading https://mirrors.aliyun.com/pypi/packages/e5/9e/0d57922cf46b9e91de636cd5b5e0d7a424ebe98f3245380a713f1f6c2a0b/tensorflow-2.20.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (620.4 MB)
+     ━━━━━━━━━━━━━━━━━━━ 620.4/620.4 MB 14.5 MB/s  0:00:41
+Collecting pandas
+  Downloading https://mirrors.aliyun.com/pypi/packages/40/a8/4dac1f8f8235e5d25b9955d02ff6f29396191d4e665d71122c3722ca83c5/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 17.3 MB/s  0:00:00
+Collecting numpy
+  Downloading https://mirrors.aliyun.com/pypi/packages/b4/63/3de6a34ad7ad6646ac7d2f55ebc6ad439dbbf9c4370017c50cf403fb19b5/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 18.1 MB/s  0:00:00
+Collecting matplotlib
+  Downloading https://mirrors.aliyun.com/pypi/packages/e2/3c/5692a2d9a5ba848fda3f48d2b607037df96460b941a59ef236404b39776b/matplotlib-3.10.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 18.3 MB/s  0:00:00
+Collecting tensorflow-datasets
+  Downloading https://mirrors.aliyun.com/pypi/packages/16/e0/657192dbc03636532ccbd5c90669d31a65187365b99ba685db36bb31dd67/tensorflow_datasets-4.9.9-py3-none-any.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 16.7 MB/s  0:00:00
+Collecting absl-py>=1.0.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/8f/aa/ba0014cc4659328dc818a28827be78e6d97312ab0cb98105a770924dc11e/absl_py-2.3.1-py3-none-any.whl (135 kB)
+Collecting astunparse>=1.6.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/2b/03/13dde6512ad7b4557eb792fbcf0c653af6076b81e5941d36ec61f7ce6028/astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting flatbuffers>=24.3.25 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ee/1b/00a78aa2e8fbd63f9af08c9c19e6deb3d5d66b4dda677a0f61654680ee89/flatbuffers-25.9.23-py2.py3-none-any.whl (30 kB)
+Collecting gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/a3/61/8001b38461d751cd1a0c3a6ae84346796a5758123f3ed97a1b121dfbf4f3/gast-0.6.0-py3-none-any.whl (21 kB)
+Collecting google_pasta>=0.1.1 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/a3/de/c648ef6835192e6e2cc03f40b19eeda4382c49b5bafb43d88b931c4c74ac/google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting libclang>=13.0.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/1d/fc/716c1e62e512ef1c160e7984a73a5fc7df45166f2ff3f254e71c58076f7c/libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl (24.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━ 24.5/24.5 MB 17.1 MB/s  0:00:01
+Collecting opt_einsum>=2.3.2 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/23/cd/066e86230ae37ed0be70aae89aabf03ca8d9f39c8aea0dec8029455b5540/opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Collecting packaging (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl (66 kB)
+Collecting protobuf>=5.28.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/21/51/0b1cbad62074439b867b4e04cc09b93f6699d78fd191bed2bbb44562e077/protobuf-6.33.0-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Collecting requests<3,>=2.21.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl (64 kB)
+Requirement already satisfied: setuptools in /home/sun_zhe/miniconda3/envs/transf/lib/python3.10/site-packages (from tensorflow) (80.9.0)
+Collecting six>=1.12.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting termcolor>=1.1.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/f9/d5/141f53d7c1eb2a80e6d3e9a390228c3222c27705cbe7f048d3623053f3ca/termcolor-3.2.0-py3-none-any.whl (7.7 kB)
+Collecting typing_extensions>=3.6.6 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Collecting wrapt>=1.11.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c6/93/5cf92edd99617095592af919cb81d4bff61c5dbbb70d3c92099425a8ec34/wrapt-2.0.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (113 kB)
+Collecting grpcio<2.0,>=1.24.3 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/38/f7/e3cdb252492278e004722306c5a8935eae91e64ea11f0af3437a7de2e2b7/grpcio-1.76.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 12.7 MB/s  0:00:00
+Collecting tensorboard~=2.20.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/9c/d9/a5db55f88f258ac669a92858b70a714bbbd5acd993820b41ec4a96a4d77f/tensorboard-2.20.0-py3-none-any.whl (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 14.4 MB/s  0:00:00
+Collecting keras>=3.10.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ba/61/cc8be27bd65082440754be443b17b6f7c185dec5e00dfdaeab4f8662e4a8/keras-3.12.0-py3-none-any.whl (1.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 17.5 MB/s  0:00:00
+Collecting h5py>=3.11.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/05/8a/63f4b08f3628171ce8da1a04681a65ee7ac338fde3cb3e9e3c9f7818e4da/h5py-3.15.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (4.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 13.3 MB/s  0:00:00
+Collecting ml_dtypes<1.0.0,>=0.5.1 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/dd/12/79e9954e6b3255a4b1becb191a922d6e2e94d03d16a06341ae9261963ae8/ml_dtypes-0.5.3-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (4.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 15.2 MB/s  0:00:00
+Collecting charset_normalizer<4,>=2 (from requests<3,>=2.21.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/36/3b/60cbd1f8e93aa25d1c669c649b7a655b0b5fb4c571858910ea9332678558/charset_normalizer-3.4.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (153 kB)
+Collecting idna<4,>=2.5 (from requests<3,>=2.21.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl (71 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3,>=2.21.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl (129 kB)
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e4/37/af0d2ef3967ac0d6113837b44a4f0bfe1328c2b9763bd5b1744520e5cfed/certifi-2025.10.5-py3-none-any.whl (163 kB)
+Collecting markdown>=2.6.8 (from tensorboard~=2.20.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/70/81/54e3ce63502cd085a0c556652a4e1b919c45a446bd1e5300e10c44c8c521/markdown-3.10-py3-none-any.whl (107 kB)
+Collecting pillow (from tensorboard~=2.20.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ed/1c/880921e98f525b9b44ce747ad1ea8f73fd7e992bafe3ca5e5644bf433dea/pillow-12.0.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 16.9 MB/s  0:00:00
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard~=2.20.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/73/c6/825dab04195756cf8ff2e12698f22513b3db2f64925bdd41671bfb33aaa5/tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 16.1 MB/s  0:00:00
+Collecting werkzeug>=1.0.1 (from tensorboard~=2.20.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/52/24/ab44c871b0f07f491e5d2ad12c9bd7358e527510618cb1b803a88e986db1/werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading https://mirrors.aliyun.com/pypi/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading https://mirrors.aliyun.com/pypi/packages/5c/23/c7abc0ca0a1526a0774eca151daeb8de62ec457e77262b66b359c3c7679e/tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading https://mirrors.aliyun.com/pypi/packages/32/5c/1ee32d1c7956923202f00cf8d2a14a62ed7517bdc0ee1e55301227fc273c/contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ce/20/9b2b4051b6ec6689480787d506b5003f72648f50972a92d04527a456192c/fonttools-4.60.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 17.5 MB/s  0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading https://mirrors.aliyun.com/pypi/packages/d4/42/0f333164e6307a0687d1eb9ad256215aae2f4bd5d28f4653d6cd319a3ba3/kiwisolver-1.4.9-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 8.5 MB/s  0:00:00
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading https://mirrors.aliyun.com/pypi/packages/10/5e/1aa9a93198c6b64513c9d7752de7422c06402de6600a8767da1524f9570b/pyparsing-3.2.5-py3-none-any.whl (113 kB)
+Collecting array_record>=0.5.0 (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3d/94/03b64645354537fe54d4647f86ae91f9625fec330210ed1dceebf22617fa/array_record-0.8.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 15.2 MB/s  0:00:00
+Collecting dm-tree (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/7c/79/ba0f7274164eb6bd06a36c2f8cb21b0debc32fd9ba8e73a7c9e50c90041b/dm_tree-0.1.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (152 kB)
+Collecting etils>=1.6.0 (from etils[edc,enp,epath,epy,etree]>=1.6.0; python_version < "3.11"->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e7/98/87b5946356095738cb90a6df7b35ff69ac5750f6e783d5fbcc5cb3b6cbd7/etils-1.13.0-py3-none-any.whl (170 kB)
+Collecting immutabledict (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/63/7b/04ab6afa1ff7eb9ccb09049918c0407b205f5009092c0416147d163e4e2b/immutabledict-4.2.2-py3-none-any.whl (4.7 kB)
+Collecting promise (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz (19 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting psutil (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ce/b1/5f49af514f76431ba4eea935b8ad3725cdeb397e9245ab919dbc1d1dc20f/psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (263 kB)
+Collecting pyarrow (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/46/46/a1d9c24baf21cfd9ce994ac820a24608decf2710521b29223d4334985127/pyarrow-22.0.0-cp310-cp310-manylinux_2_28_x86_64.whl (47.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━ 47.6/47.6 MB 16.8 MB/s  0:00:02
+Collecting simple_parsing (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/4f/9c/e9ea38750027a6de3e3c5e68a19fda0e7b0cd3db8045f30d0f6bc113b911/simple_parsing-0.1.7-py3-none-any.whl (112 kB)
+Collecting tensorflow-metadata (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ec/bf/443fc7c325e59b9016f710bc7f6b0574e73eca7b789a6a6a2054ca77e887/tensorflow_metadata-1.17.2-py3-none-any.whl (31 kB)
+Collecting toml (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting tqdm (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl (78 kB)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in /home/sun_zhe/miniconda3/envs/transf/lib/python3.10/site-packages (from astunparse>=1.6.0->tensorflow) (0.45.1)
+Collecting einops (from etils[edc,enp,epath,epy,etree]>=1.6.0; python_version < "3.11"->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl (64 kB)
+Collecting fsspec (from etils[edc,enp,epath,epy,etree]>=1.6.0; python_version < "3.11"->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/eb/02/a6b21098b1d5d6249b7c5ab69dde30108a71e4e819d4a9778f1de1d5b70d/fsspec-2025.10.0-py3-none-any.whl (200 kB)
+Collecting importlib_resources (from etils[edc,enp,epath,epy,etree]>=1.6.0; python_version < "3.11"->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/a4/ed/1f1afb2e9e7f38a545d628f864d562a5ae64fe6f7a10e28ffb9b185b4e89/importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+Collecting zipp (from etils[edc,enp,epath,epy,etree]>=1.6.0; python_version < "3.11"->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/2e/54/647ade08bf0db230bfea292f893923872fd20be6ac6f53b2b936ba839d75/zipp-3.23.0-py3-none-any.whl (10 kB)
+Collecting rich (from keras>=3.10.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/25/7a/b0178788f8dc6cafce37a212c99565fa1fe7872c70c6c9c1e1a372d9d88f/rich-14.2.0-py3-none-any.whl (243 kB)
+Collecting namex (from keras>=3.10.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/b2/bc/465daf1de06409cdd4532082806770ee0d8d7df434da79c76564d0f69741/namex-0.1.0-py3-none-any.whl (5.9 kB)
+Collecting optree (from keras>=3.10.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/d9/c1/6827fb504351f9a3935699b0eb31c8a6af59d775ee78289a25e0ba54f732/optree-0.17.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (387 kB)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard~=2.20.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/af/cd/ce6e848bbf2c32314c9b237839119c5a564a59725b53157c856e90937b7a/markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Collecting attrs>=18.2.0 (from dm-tree->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3a/2a/7cc015f5b9f5db42b7d48157e23356022889fc354a2813c15934b7cb5c0e/attrs-25.4.0-py3-none-any.whl (67 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->keras>=3.10.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/94/54/e7d793b573f298e1c9013b8c4dade17d481164aa517d1d7148619c2cedbf/markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->keras>=3.10.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 12.4 MB/s  0:00:00
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->keras>=3.10.0->tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Collecting docstring-parser<1.0,>=0.15 (from simple_parsing->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/55/e2/2537ebcff11c1ee1ff17d8d0b6f4db75873e3b0fb32c2d4a2ee31ecb310a/docstring_parser-0.17.0-py3-none-any.whl (36 kB)
+INFO: pip is looking at multiple versions of tensorflow-metadata to determine which version is compatible with other requirements. This could take a while.
+Collecting tensorflow-metadata (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/33/30/944470f0ec0f00ccf25f0fdc84cf28be83838da5636c2b2b002960ba7ac1/tensorflow_metadata-1.17.1-py3-none-any.whl (31 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c7/9a/e610a60704db002de56dc2d99ec5b4d0d470fb28c67f749bbc1dfd4d5868/tensorflow_metadata-1.17.0-py3-none-any.whl (29 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e0/57/393aa9dde72347cde9e01f665bac344f14adefd5c748be45b23aa5804f6d/tensorflow_metadata-1.16.1-py3-none-any.whl (28 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/bd/10/14499c541f687ba20379a4c43c49f1fd206222a22571a756777dcd03a5ff/tensorflow_metadata-1.16.0-py3-none-any.whl (28 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/aa/47/91d1eea615b12473853edcbc0db02c94918e498bdf36049dde13bf24100d/tensorflow_metadata-1.15.0-py3-none-any.whl (28 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/41/23/3705c7139886c079ef4c0e3be56a5a1fb90e9ee413a4b7caaee0ee0ea6fe/tensorflow_metadata-1.14.0-py3-none-any.whl (28 kB)
+Collecting absl-py>=1.0.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/dd/87/de5c32fa1b1c6c3305d576e299801d8655c175ca9557019906247b994331/absl_py-1.4.0-py3-none-any.whl (126 kB)
+Collecting googleapis-common-protos<2,>=1.52.0 (from tensorflow-metadata->tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c4/ab/09169d5a4612a5f92490806649ac8d41e3ec9129c636754575b3553f4ea4/googleapis_common_protos-1.72.0-py3-none-any.whl (297 kB)
+Collecting tensorflow-metadata (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/6e/b7/41ed520712c659dee0653dbd1ae71ed991bc51c7622e3e4dafbbf208faaa/tensorflow_metadata-1.13.1-py3-none-any.whl (28 kB)
+INFO: pip is still looking at multiple versions of tensorflow-metadata to determine which version is compatible with other requirements. This could take a while.
+  Downloading https://mirrors.aliyun.com/pypi/packages/1d/7a/29b68133e47b46c960d3bcdfdc3bc9e479303d0ce827867006908c2320c1/tensorflow_metadata-1.13.0-py3-none-any.whl (53 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/7e/cb/1a1dd9e8495d3932c056120127d18695bca50c2f754013b6bf0d51557c47/tensorflow_metadata-1.12.0-py3-none-any.whl (52 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/6f/f2/6ccc170dce02d80a52879107dec9ec5d5155cba98316e1d70495c894833d/tensorflow_metadata-1.11.0-py3-none-any.whl (52 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3a/86/2b3251bb560068f31817d9b678588098e28f396c1f6b88c57cf5d28670af/tensorflow_metadata-1.10.0-py3-none-any.whl (50 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/22/42/6ebb03aef0cb37f2ea98f1bf04ed21450fec73941e8421ba3fa37f94ffaf/tensorflow_metadata-1.9.0-py3-none-any.whl (51 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading https://mirrors.aliyun.com/pypi/packages/20/e7/b4dcc898ca1c250ff1f1e431a3fdd2b347663283e8aea282704d59e92ad9/tensorflow_metadata-1.8.0-py3-none-any.whl (50 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ed/c4/e4fa9d2725eff8eeed00f2c959d1cbb0a7f027f46ea36b9987b99d4e0d8c/tensorflow_metadata-1.7.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c7/4d/c1a509ea79857e5f4da30acbe6bf55294a24ad7388ab2842ba68192ca69c/tensorflow_metadata-1.6.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/81/e6/193d9637b844f88797199fced0e3baa893dd110bdca34b5708b49120ae30/tensorflow_metadata-1.5.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/03/4b/5ebc78654b002b880478b3211798bb4ff7b39c996d15a3340f732927149c/tensorflow_metadata-1.4.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/49/eb/c521f1d457f5e121cb467fa8ad65e7838ad5004d1b0966ebd245da782dfd/tensorflow_metadata-1.2.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/cc/6e/7ce83a1caa3788643cd2d3cb587af557b9f411e3c586b6219a6e7d65877f/tensorflow_metadata-1.1.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ca/80/6cb916c941002a20b449608644ac7a54085c69d4c1b0401e6979c339fff5/tensorflow_metadata-1.0.0-py3-none-any.whl (48 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/27/e3/593025f6521de8b0f430b7c14e8adac6bae17002ca9a7841783065e56e20/tensorflow_metadata-0.30.0-py3-none-any.whl (47 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/cc/22/9fad290358dc908bbb07d5613c06e20300eb7fda400417024e637d18fb4c/tensorflow_metadata-0.29.0-py3-none-any.whl (47 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/1a/61/3e801aeb24982b34aeb29b5b7f2e3f39f92c85ca8f0f6d1206ad478d63ee/tensorflow_metadata-0.28.0-py3-none-any.whl (47 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/84/c1/49bc4de13ab35d29f836cf54e42645a54b469711dc15f3d1bc8f6e80fbb7/tensorflow_metadata-0.27.0-py3-none-any.whl (47 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/56/8f/4d28679c1c23237de615661d5d2961b9c79114f1a00b4daf3ccc451585f3/tensorflow_metadata-0.26.0-py3-none-any.whl (47 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/57/95/daf3259ed1ca4f262bde2c483356174c86b6a6a39e5dbf814801c52b7b8d/tensorflow_metadata-0.25.0-py3-none-any.whl (44 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/72/c4/1ff6a8afaac19250780a82bc05907586f6c23f45a5983df8921040e2b04c/tensorflow_metadata-0.24.0-py3-none-any.whl (44 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3c/61/025e0eb990fcbae79be9dcdca219d739993223fdf72194c96792e69933ab/tensorflow_metadata-0.23.0-py3-none-any.whl (43 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/91/94/07baf9e2a060fc5c7bd95052cc9114afd3f67b6927bd7224c0626fad5703/tensorflow_metadata-0.22.2-py2.py3-none-any.whl (32 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/45/44/fda2adc21b2a2c2906deadf24582a7d702198293168d1b63955b086f1985/tensorflow_metadata-0.22.1-py2.py3-none-any.whl (31 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/33/13/ce395182239eb43f2e20c5ee81ce37fe65b481e95cb97b384a6e43d62317/tensorflow_metadata-0.22.0-py2.py3-none-any.whl (31 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/57/12/213dc5982e45283591ee0cb535b08ff603200ba84643bbea0aaa2109ed7c/tensorflow_metadata-0.21.2-py2.py3-none-any.whl (31 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3c/aa/c4c3c9339fbe9d46edd390789d7033b4fa89e9f566d5723576dfdd3ed18e/tensorflow_metadata-0.21.1-py2.py3-none-any.whl (31 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/7e/1f/fcd0da142879ae773324602d097001ee4c8049cc41978f79c8fad6dbd6a4/tensorflow_metadata-0.21.0-py2.py3-none-any.whl (30 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3b/0c/afb81ea6998f6e26521671585d1cd9d3f7945a8b9834764e91757453dc25/tensorflow_metadata-0.15.2-py2.py3-none-any.whl (29 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/bd/00/f353385e40f7962b63b94d17f7050b5853bc20c243483cff0cb3da03d206/tensorflow_metadata-0.15.1-py2.py3-none-any.whl (29 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/4e/c2/e4ed82a725c9f8160a0ed73f0511773be9f76343def86f6f47121f0e8430/tensorflow_metadata-0.15.0-py2.py3-none-any.whl (27 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ea/79/bfb672fc4ad09297f61734992c2658f753fc3d508701c5b5c47390de0ee2/tensorflow_metadata-0.14.0-py2.py3-none-any.whl (27 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/08/b7/3fc74574aa9aff44491cce996711dd6094653c20d9e2800be4efb054e0da/tensorflow_metadata-0.13.0-py3-none-any.whl (25 kB)
+  Downloading https://mirrors.aliyun.com/pypi/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl (25 kB)
+Collecting dm-tree (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/cc/2b/a13e3a44f9121ecab0057af462baeb64dc50eb269de52648db8823bc12ae/dm_tree-0.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (152 kB)
+Collecting keras>=3.10.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/94/5b/4c778cc921ce4b864b238f63f8e3ff6e954ab19b80c9fa680593ad8093d4/keras-3.11.3-py3-none-any.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 14.1 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/ee/49/795d20e41a1cece7fe92dd80ae2cab3372cc0d1502bf3b277434d87da3a9/keras-3.11.2-py3-none-any.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 16.6 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/99/7f/5a52d5f964f1f6eec7d6363da3670fb5b9b7f88a6d93c3b1c127ca920a32/keras-3.11.1-py3-none-any.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 17.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/ad/ef/812a74cd45189382869aeff38abd88cc2ec9813adb2470543b3a683735d1/keras-3.11.0-py3-none-any.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 14.7 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/95/e6/4179c461a5fc43e3736880f64dbdc9b1a5349649f0ae32ded927c0e3a227/keras-3.10.0-py3-none-any.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 17.4 MB/s  0:00:00
+Collecting etils[edc,enp,epath,epy,etree]>=1.6.0 (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/dd/71/40ee142e564b8a34a7ae9546e99e665e0001011a3254d5bbbe113d72ccba/etils-1.12.2-py3-none-any.whl (167 kB)
+Collecting array_record>=0.5.0 (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c5/4b/e08c238bff43d804364f8162f062d63f80ba6ee4d23a381e618379543687/array_record-0.7.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 17.6 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/d0/9f/83bf4b3e67673c2c405ea724ab3a509a01e3e91cc304a06238c039ddd4ad/array_record-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 19.6 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/36/45/70c464b662558c41201544e490fa072d8bec6d926cc207a9997b16c40027/array_record-0.6.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 16.8 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/ce/fd/a241172b054f0c496cc575a6081e2b457ef3cf520e652ee22f3035714535/array_record-0.5.1-1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 15.4 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/c0/2d/24d44c40a174008a6bdd2614fb4644bc5ff6fe6afa042bd590b27e47cb37/array_record-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 18.0 MB/s  0:00:00
+Collecting tensorflow-datasets
+  Downloading https://mirrors.aliyun.com/pypi/packages/ff/62/5fd5ba902d6b89e2c373fcd71a4c137b43ae1a1d2a6ff7d798c0085cbf35/tensorflow_datasets-4.9.8-py3-none-any.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 12.5 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/43/e6/a85c9a2d8ce72c09c8c8bf231c75e6e12e0e0848df336b28d1ec0beae1fe/tensorflow_datasets-4.9.7-py3-none-any.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 12.5 MB/s  0:00:00
+Collecting click (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/db/d3/9dcc0f5797f070ec8edf30fbadfb200e71d9db6b84d211e3b2085a7589a0/click-8.3.0-py3-none-any.whl (107 kB)
+Collecting tensorflow-datasets
+  Downloading https://mirrors.aliyun.com/pypi/packages/8f/50/52fa3d41d20c687d81f66338bc1b0e71a27a3390ecfa8f5bc212a10135e1/tensorflow_datasets-4.9.6-py3-none-any.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 10.9 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/ae/7d/058daa681e399e3144f497585cfb2b91659f0286c50b5ebc89ffc9183d9f/tensorflow_datasets-4.9.5-py3-none-any.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 12.4 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/fe/18/4865973f5469cfe33bbe1cfc2f1918335eb44f4cc3d316c1bce22c1af2bc/tensorflow_datasets-4.9.4-py3-none-any.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 14.3 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/a1/73/7a9ed7935f6833d73b32f1e2a1210082f5ccb95445440b4e2b0f66ab7792/tensorflow_datasets-4.9.3-py3-none-any.whl (5.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 12.2 MB/s  0:00:00
+Collecting array-record (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/93/8e/c6b646029a9c544ecd6806c6ea0efb67d0ba3300e1d68518f58d9774d3f0/array_record-0.4.1-py310-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 12.6 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/97/ec/7845d8be624aba3b6d2346276f9249c415319e7b0957b036857b93a759c2/array_record-0.4.0-py310-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 12.3 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/c4/48/3e5eb643fc55a57c8493a65baf646583c1beaceb2d11f1f769ceea8bd1ed/array_record-0.3.0-py310-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 9.8 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/01/13/07bd4d0dbd4ce9152471dac6004609519a78402e2a70ae42940e2b3ff1a2/array_record-0.2.0-py310-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 17.4 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/41/85/c7c1e51e4cd1ef5955c0ebf9228fbe9c3a6b7202dd9b19c7f75d780fed9e/array_record-0.1.0-py39-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 16.4 MB/s  0:00:00
+Collecting tensorflow-datasets
+  Downloading https://mirrors.aliyun.com/pypi/packages/62/82/521e36235c7890b067415fa874f5074ff21f1005a189d79fd72b33b39ca1/tensorflow_datasets-4.9.2-py3-none-any.whl (5.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 16.7 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/be/a0/aa5ebcf5cab4e741f000d2ec490bef7e796e54d25b851399730537d0de09/tensorflow_datasets-4.9.1-py3-none-any.whl (5.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 18.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/b0/d2/62af5efa301ef0298b1861b51953dd65bbffe0612d691170d10c461dbb51/tensorflow_datasets-4.9.0-py3-none-any.whl (5.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 15.9 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/70/d9/1deca2b3feb31b27d54755607e22746c0b09807900b878d7ea44cb5c02d9/tensorflow_datasets-4.8.3-py3-none-any.whl (5.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 15.1 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/c2/2a/c1aa78b0211b1e3f6439d4edabd44bfb6e1c45544a7a241e3ba5cfe3c316/tensorflow_datasets-4.8.2-py3-none-any.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 15.5 MB/s  0:00:00
+Collecting dill (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/50/3d/9373ad9c56321fdab5b41197068e1d8c25883b3fea29dd361f9b55116869/dill-0.4.0-py3-none-any.whl (119 kB)
+Collecting tensorflow-datasets
+  Downloading https://mirrors.aliyun.com/pypi/packages/6a/50/c202d18dafd50d54588391e823d754a761376e200e89dd43149fc8c4f003/tensorflow_datasets-4.8.1-py3-none-any.whl (5.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 14.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/97/bc/338514ff7daa82171de369d1b6d26d2eda87a741b9c5fdea46313f2e5f9f/tensorflow_datasets-4.8.0-py3-none-any.whl (5.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 11.5 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/bd/5f/a7e7b575db86015ca6155c60e535df75e4145e95eb97bb6abfb69362d38d/tensorflow_datasets-4.7.0-py3-none-any.whl (4.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 13.3 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/05/ae/b6efc66bf6276265d813e12a895b05bc3533092d107ca57c8ecbf4c7c963/tensorflow_datasets-4.6.0-py3-none-any.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 14.1 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/35/b7/539d492854096df09229a7d0f373c5b4f26f896013f3e00c54172deefb9a/tensorflow_datasets-4.5.2-py3-none-any.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 14.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/8c/62/5a8d1779d5113d141a06b284822071f41d78cedcad2976d737251d9297a1/tensorflow_datasets-4.5.1-py3-none-any.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 11.6 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/01/19/3652b3b32892750a19ae2f8b260d3d42e41db749248583c1b80050c2fd80/tensorflow_datasets-4.5.0-py3-none-any.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 11.9 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/93/83/85f14bcf27df5ae23502803502f8506eefec18a285fea909aa67dc9b736e/tensorflow_datasets-4.4.0-py3-none-any.whl (4.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 10.7 MB/s  0:00:00
+Collecting future (from tensorflow-datasets)
+  Downloading https://mirrors.aliyun.com/pypi/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl (491 kB)
+Collecting tensorflow-datasets
+  Downloading https://mirrors.aliyun.com/pypi/packages/6a/bc/3f525a70842e2739e0d33d3a55314c18355dc294dfb20434628850abeb8b/tensorflow_datasets-4.3.0-py3-none-any.whl (3.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 12.4 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/d3/91/c3e36695ca04e6f3c2d920887d7dc36550f6bbb03d7d5fd03c2172b06d97/tensorflow_datasets-4.2.0-py3-none-any.whl (3.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 11.3 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/8b/02/c1260ff4caf483c01ce36ca45a63f05417f732d94ec42cce292355dc7ea4/tensorflow_datasets-4.1.0-py3-none-any.whl (3.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 13.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/e8/3c/9563b456dedef4a5d9652e50544bc4930b09f24c3d6dee533f89c0f3189b/tensorflow_datasets-4.0.1-py3-none-any.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 10.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/95/cc/3257d849d1133b3d35baca6e08879934c603cc30a5a1c0bbe823fb2709dd/tensorflow_datasets-4.0.0-py3-none-any.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 10.4 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/ca/c9/d97bdf931edbae9aebc767633d088bd674136d5fe7587ef693b7cb6a1883/tensorflow_datasets-3.2.1-py3-none-any.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 13.8 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/c8/87/c364666684653d45bba918dbdfbf7bff80a84128a312249600bd7d6ef8f6/tensorflow_datasets-3.2.0-py3-none-any.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 15.6 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/bd/99/996b15ff5d11166c3516012838f569f78d57b71d4aac051caea826f6c7e0/tensorflow_datasets-3.1.0-py3-none-any.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 17.3 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/76/41/8404fabb295025c1ced13bb150246f75770619889d8637afa523a4d09cdb/tensorflow_datasets-3.0.0-py3-none-any.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 17.1 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/80/f1/172770d86e8cd3b531b73ccb2ba5cf285ea78937ab857bd958a77ed247e3/tensorflow_datasets-2.1.0-py3-none-any.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 16.8 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/88/b9/74c219b0310b3df0ac60c4948c4191b9377b6b746615b176819533096fb5/tensorflow_datasets-2.0.0-py3-none-any.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 15.8 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 15.2 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/ae/77/456b0006e24ea009433b4ca4264a159526606ff2bb50bc41afc2d2c8f9c5/tensorflow_datasets-1.3.1-py3-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 15.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/e2/14/900746f9b8e1ed8ea93661f1a62b3937a5a25858d550ece38de8ea579f2d/tensorflow_datasets-1.3.0-py3-none-any.whl (2.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 16.1 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/6c/34/ff424223ed4331006aaa929efc8360b6459d427063dc59fc7b75d7e4bab3/tensorflow_datasets-1.2.0-py3-none-any.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 12.4 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/9a/00/693b1c55a7f6d539922d8638b8139c0ba164470de175a26b6fe5e04e4b4c/tensorflow_datasets-1.1.0-py3-none-any.whl (933 kB)
+     ━━━━━━━━━━━━━━━━━━━ 933.5/933.5 kB 15.8 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/15/11/ce86b45cb41de8490d2f27f76ad5fe2f75d6eaac1c21f4a12baf1875882e/tensorflow_datasets-1.0.2-py3-none-any.whl (682 kB)
+     ━━━━━━━━━━━━━━━━━━━ 682.9/682.9 kB 14.0 MB/s  0:00:00
+  Downloading https://mirrors.aliyun.com/pypi/packages/d9/b8/457ad44e8748fbe5021b4ca7e7d589b5852881bbb11bca4d947952a13558/tensorflow_datasets-1.0.1-py3-none-any.whl (400 kB)
+Collecting tensorflow
+  Downloading https://mirrors.aliyun.com/pypi/packages/77/60/51d921b17f7b1547db32018d6a933627d4e2a762d2fc2ca6c0032cc8b062/tensorflow-2.19.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (644.8 MB)
+     ━━━━━━━━━━━━━━━━━━━ 644.8/644.8 MB 13.6 MB/s  0:00:45
+Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.3 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/85/e4/07c80521879c2d15f321465ac24c70efe2381378c00bf5e56a0f4fbac8cd/protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+Collecting tensorboard~=2.19.0 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/5d/12/4f70e8e2ba0dbe72ea978429d8530b0333f0ed2140cc571a48802878ef99/tensorboard-2.19.0-py3-none-any.whl (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 12.2 MB/s  0:00:00
+Collecting numpy
+  Downloading https://mirrors.aliyun.com/pypi/packages/05/db/5d9c91b2e1e2e72be1369278f696356d44975befcae830daf2e667dcb54f/numpy-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━ 16.3/16.3 MB 16.5 MB/s  0:00:00
+Collecting tensorflow-io-gcs-filesystem>=0.23.1 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/f3/48/47b7d25572961a48b1de3729b7a11e835b888e41e0203cca82df95d23b91/tensorflow_io_gcs_filesystem-0.37.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 16.0 MB/s  0:00:00
+Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.3 (from tensorflow)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e7/a2/3273c05fc5d959fa90de6453ebd6d45c6d4fab3ec212d631625ea5780921/protobuf-4.21.12-cp37-abi3-manylinux2014_x86_64.whl (409 kB)
+Building wheels for collected packages: promise
+  Building wheel for promise (setup.py): started
+  Building wheel for promise (setup.py): finished with status 'done'
+  Created wheel for promise: filename=promise-2.3-py3-none-any.whl size=21581 sha256=59242d5cc4f60c584206c50218c7f899e723d2f1cee0032018f573a59d9b25de
+  Stored in directory: /home/sun_zhe/.cache/pip/wheels/e2/2e/5f/dd192174875bd635ca33e2d629ae80fdc79936816c9b855c98
+Successfully built promise
+Installing collected packages: pytz, namex, libclang, flatbuffers, zipp, wrapt, urllib3, tzdata, typing_extensions, tqdm, toml, termcolor, tensorflow-io-gcs-filesystem, tensorboard-data-server, six, pyparsing, pygments, pyarrow, psutil, protobuf, pillow, packaging, opt_einsum, numpy, mdurl, MarkupSafe, markdown, kiwisolver, importlib_resources, immutabledict, idna, gast, fsspec, fonttools, etils, einops, docstring-parser, cycler, charset_normalizer, certifi, attrs, absl-py, werkzeug, tensorflow-metadata, simple_parsing, requests, python-dateutil, promise, optree, ml_dtypes, markdown-it-py, h5py, grpcio, google_pasta, dm-tree, contourpy, astunparse, tensorboard, rich, pandas, matplotlib, keras, array_record, tensorflow, tensorflow-datasets
+
+Successfully installed MarkupSafe-3.0.3 absl-py-2.3.1 array_record-0.8.1 astunparse-1.6.3 attrs-25.4.0 certifi-2025.10.5 charset_normalizer-3.4.4 contourpy-1.3.2 cycler-0.12.1 dm-tree-0.1.9 docstring-parser-0.17.0 einops-0.8.1 etils-1.13.0 flatbuffers-25.9.23 fonttools-4.60.1 fsspec-2025.10.0 gast-0.6.0 google_pasta-0.2.0 grpcio-1.76.0 h5py-3.15.1 idna-3.11 immutabledict-4.2.2 importlib_resources-6.5.2 keras-3.12.0 kiwisolver-1.4.9 libclang-18.1.1 markdown-3.10 markdown-it-py-4.0.0 matplotlib-3.10.7 mdurl-0.1.2 ml_dtypes-0.5.3 namex-0.1.0 numpy-2.1.3 opt_einsum-3.4.0 optree-0.17.0 packaging-25.0 pandas-2.3.3 pillow-12.0.0 promise-2.3 protobuf-4.21.12 psutil-7.1.3 pyarrow-22.0.0 pygments-2.19.2 pyparsing-3.2.5 python-dateutil-2.9.0.post0 pytz-2025.2 requests-2.32.5 rich-14.2.0 simple_parsing-0.1.7 six-1.17.0 tensorboard-2.19.0 tensorboard-data-server-0.7.2 tensorflow-2.19.1 tensorflow-datasets-4.9.9 tensorflow-io-gcs-filesystem-0.37.1 tensorflow-metadata-1.17.2 termcolor-3.2.0 toml-0.10.2 tqdm-4.67.1 typing_extensions-4.15.0 tzdata-2025.2 urllib3-2.5.0 werkzeug-3.1.3 wrapt-2.0.1 zipp-3.23.0
