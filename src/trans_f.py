@@ -422,6 +422,84 @@ metrics_df = pd.DataFrame({
 })
 metrics_df.to_csv('./results/metrics.csv', index=False)
 
+class TransformerNoPE(tf.keras.Model):
+    def __init__(self, num_layers, d_model, num_heads, dff,
+                 input_vocab_size, target_vocab_size, rate=0.1):
+        super().__init__()
+        # 使用无位置编码的 Encoder
+        self.encoder = EncoderNoPE(num_layers, d_model, num_heads, dff,
+                                   input_vocab_size, maximum_position_encoding=1000, rate=rate)
+        # Decoder 保持原样（仍然有位置编码）
+        self.decoder = Decoder(num_layers, d_model, num_heads, dff,
+                               target_vocab_size, maximum_position_encoding=1000, rate=rate)
+        self.final_layer = tf.keras.layers.Dense(target_vocab_size)
+
+    def call(self, inp, tar, training, enc_padding_mask, look_ahead_mask, dec_padding_mask):
+        enc_output = self.encoder(inp, training, enc_padding_mask)
+        dec_output, attention_weights = self.decoder(tar, enc_output, training,
+                                                     look_ahead_mask, dec_padding_mask)
+        final_output = self.final_layer(dec_output)
+        return final_output, attention_weights
+
+
+# 初始化“无位置编码”模型
+transformer_nope = TransformerNoPE(num_layers, d_model, num_heads, dff,
+                                   input_vocab_size, target_vocab_size, rate=dropout_rate)
+optimizer_nope = tf.keras.optimizers.Adam(learning_rate=3e-4)
+
+# 保存训练曲线数据
+train_losses_nope, val_losses_nope, perplexities_nope = [], [], []
+
+print("开始无位置编码模型训练 (Ablation)")
+
+for epoch in range(EPOCHS):
+    total_loss = 0
+    for (batch, (inp, tar)) in enumerate(train_dataset):
+        tar_inp = tar[:, :-1]
+        tar_real = tar[:, 1:]
+        enc_padding_mask, look_ahead_mask, dec_padding_mask = create_masks(inp, tar_inp)
+        with tf.GradientTape() as tape:
+            preds, _ = transformer_nope(inp, tar_inp, True,
+                                        enc_padding_mask, look_ahead_mask, dec_padding_mask)
+            loss = loss_function(tar_real, preds)
+        gradients = tape.gradient(loss, transformer_nope.trainable_variables)
+        optimizer_nope.apply_gradients(zip(gradients, transformer_nope.trainable_variables))
+        total_loss += loss
+
+    avg_train_loss = total_loss / len(train_dataset)
+    train_losses_nope.append(avg_train_loss.numpy())
+
+    # 验证
+    val_loss = 0
+    for (batch, (inp, tar)) in enumerate(val_dataset):
+        tar_inp = tar[:, :-1]
+        tar_real = tar[:, 1:]
+        enc_pad_mask, look_ahead_mask, dec_pad_mask = create_masks(inp, tar_inp)
+        preds, _ = transformer_nope(inp, tar_inp, False,
+                                    enc_pad_mask, look_ahead_mask, dec_pad_mask)
+        val_loss += loss_function(tar_real, preds)
+    avg_val_loss = val_loss / len(val_dataset)
+    val_losses_nope.append(avg_val_loss.numpy())
+    perplexity = tf.exp(avg_val_loss).numpy()
+    perplexities_nope.append(perplexity)
+    print(f"[NoPE] Epoch {epoch+1}/{EPOCHS} | Train Loss: {avg_train_loss:.4f} | "
+          f"Val Loss: {avg_val_loss:.4f} | PPL: {perplexity:.2f}")
+
+plt.figure(figsize=(10, 6))
+plt.plot(range(1, EPOCHS+1), val_losses, label='With Positional Encoding', linestyle='--', color='orange')
+plt.plot(range(1, EPOCHS+1), val_losses_nope, label='Without Positional Encoding', linestyle='-', color='blue')
+plt.xlabel('Epoch')
+plt.ylabel('Validation Loss')
+plt.title('Ablation: Effect of Positional Encoding')
+plt.legend()
+plt.grid(alpha=0.3)
+os.makedirs('./results', exist_ok=True)
+plt.savefig('./results/ablation_curve.png', dpi=300, bbox_inches='tight')
+plt.close()
+
+print("\n 消融实验完成：ablation_curve.png 已保存到 ./results/")
+
+
 def load_model(checkpoint_dir):
     checkpoint = tf.train.Checkpoint(optimizer=optimizer, model=transformer)
     latest_ckpt = tf.train.latest_checkpoint(checkpoint_dir)
